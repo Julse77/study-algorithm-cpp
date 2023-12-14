@@ -28,12 +28,19 @@ void RunLevel01()
 
 void RunLevel02()
 {
-    
+    //    boj_1330();     // 두 수 비교하기
+    //    boj_9498();     // 시험 성적
+    //    boj_2753();     // 윤년
+    //    boj_14681();    // 사분면 고르기
+    //    boj_2884();     // 알람 시계
+    //    boj_2525();     // 오븐 시계
+    boj_2480();    // 주사위 세개
 }
 
 
 int main(int argc, const char * argv[]) {
     //    RunLevel01();   // Level 01
+    RunLevel02();
     
     return 0;
 }
