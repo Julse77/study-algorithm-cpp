@@ -8,6 +8,7 @@
 #include <iostream>
 #include "boj-solve-level/level_01.hpp"
 #include "boj-solve-level/level_02.hpp"
+#include "boj-solve-level/level_03.hpp"
 
 void RunLevel01()
 {
@@ -34,13 +35,30 @@ void RunLevel02()
     //    boj_14681();    // 사분면 고르기
     //    boj_2884();     // 알람 시계
     //    boj_2525();     // 오븐 시계
-    boj_2480();    // 주사위 세개
+    //    boj_2480();    // 주사위 세개
+}
+
+void RunLevel03()
+{
+    //    boj_2739();     // 구구단
+    //    boj_10950();    // A+B - 3
+    //    boj_8393();     // 합
+    //    boj_25304();    // 영수증
+    //    boj_25314();    // 코딩은 체육과목 입니다
+    //    boj_15552();    // 빠른 A+B
+    //    boj_11021();    // A+B - 7
+    //    boj_11022();    // A+B - 8
+    //    boj_2438();     // 별 찍기 - 1
+    //    boj_2439();     // 별 찍기 - 2
+    //    boj_10952();    // A+B - 5
+    boj_10951();    // A+B - 4
 }
 
 
 int main(int argc, const char * argv[]) {
     //    RunLevel01();   // Level 01
-    RunLevel02();
+    //    RunLevel02();   // Level 02
+    RunLevel03();   // Level 03
     
     return 0;
 }
