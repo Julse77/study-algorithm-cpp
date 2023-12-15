@@ -9,6 +9,7 @@
 #include "boj-solve-level/level_01.hpp"
 #include "boj-solve-level/level_02.hpp"
 #include "boj-solve-level/level_03.hpp"
+#include "boj-solve-level/level_04.hpp"
 
 void RunLevel01()
 {
@@ -51,14 +52,23 @@ void RunLevel03()
     //    boj_2438();     // 별 찍기 - 1
     //    boj_2439();     // 별 찍기 - 2
     //    boj_10952();    // A+B - 5
-    boj_10951();    // A+B - 4
+    //    boj_10951();    // A+B - 4
+}
+
+void RunLevel04()
+{
+    //    boj_10807();    // 개수 세기
+    //    boj_10871();    // X보다 작은 수
+    //    boj_10818();        // 최소, 최대
+    boj_2562();     // 최댓값
 }
 
 
 int main(int argc, const char * argv[]) {
     //    RunLevel01();   // Level 01
     //    RunLevel02();   // Level 02
-    RunLevel03();   // Level 03
+    //    RunLevel03();   // Level 03
+    RunLevel04();
     
     return 0;
 }

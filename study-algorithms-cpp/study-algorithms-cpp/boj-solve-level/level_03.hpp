@@ -24,3 +24,7 @@ void boj_2438();
 void boj_2439();
 void boj_10952();
 void boj_10951();
+void boj_10807();
+void boj_10871();
+void boj_10818();
+void boj_2562();
