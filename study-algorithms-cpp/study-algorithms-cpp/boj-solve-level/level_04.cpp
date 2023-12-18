@@ -111,3 +111,193 @@ void boj_2562()
     std::cout << max << std::endl;
     std::cout << count << std::endl;
 }
+
+void boj_10810()
+{
+    // 백준 10810번 - 공 넣기
+    int N, M;
+    std::cin >> N >> M;
+    
+    int i, j, k;
+    int array[N];
+    
+    for (int x = 0; x < N; x++)
+    {
+        array[x] = 0;
+    }
+        
+    for (int x = 0; x < M; x++)
+    {
+        std::cin >> i >> j >> k;
+        
+        for (int y = i-1; y < j; y++)
+        {
+            array[y] = k;
+        }
+    }
+    
+    for (int x = 0; x < N; x++)
+    {
+        std::cout << array[x] << " ";
+    }
+    
+    std::cout << std::endl;
+}
+
+void boj_10813()
+{
+    // 백준 10813번 - 공 바꾸기
+    int N, M;
+    std::cin >> N >> M;
+    
+    int i, j;
+    int array[N];
+    
+    for (int x = 0; x < N; x++)
+    {
+        array[x] = x + 1;
+    }
+    
+    for (int x = 0; x < M; x++)
+    {
+        std::cin >> i >> j;
+        
+        int a, b;
+        a = array[i-1];
+        b = array[j-1];
+        
+        array[i-1] = b;
+        array[j-1] = a;
+    }
+    
+    for (int x = 0; x < N; x++)
+    {
+        std::cout << array[x] << " ";
+    }
+    
+    std::cout << std::endl;
+}
+
+void boj_5597()
+{
+    // 백준 5597번 - 과제 안 내신분..?
+    int student[30];
+    
+    for (int i = 0; i < 30; i++)
+    {
+        student[i] = i+1;
+    }
+    
+    for (int i = 0; i < 28; i++)
+    {
+        int input;
+        std::cin >> input;
+        
+        for (int j = 0; j < 30; j++)
+        {
+            if (student[j] == input)
+            {
+                student[j] = 0;
+            }
+        }
+    }
+    
+    for (int i = 0; i < 30; i++)
+    {
+        if (student[i] != 0)
+        {
+            std::cout << student[i] << std::endl;
+        }
+    }
+}
+
+void boj_3052()
+{
+    // 백준 3052번 - 나머지
+    int array[42] = {};
+    
+    for (int i = 0; i < 10; i++)
+    {
+        int input;
+        std::cin >> input;
+        
+        array[input % 42]++;
+    }
+    
+    int result = 0;
+    
+    for (int i = 0; i < 42; i++)
+    {
+        if(array[i] != 0)
+        {
+            result++;
+        }
+    }
+        
+    std::cout << result << std::endl;
+}
+
+void boj_10811()
+{
+    // 백준 10811번 - 바구니 뒤집기
+    int N, M;
+    std::cin >> N >> M;
+    
+    int array[N], tempArray[N];
+    int i, j;
+    
+    for (int x = 0; x < N; x++)
+    {
+        array[x] = x + 1;
+    }
+        
+    for (int x = 0; x < M; x++)
+    {
+        std::cin >> i >> j;
+                        
+        int tempJ = j-1;
+        
+        for (int y = 0; y < N; y++)
+        {
+            tempArray[y] = array[y];
+        }
+        
+        for (int y = i-1; y < j; y++)
+        {
+            array[y] = tempArray[tempJ];
+            tempJ--;
+        }
+    }
+    
+    for (int x = 0; x < N; x++)
+    {
+        std::cout << array[x] << " ";
+    }
+    
+    std::cout << std::endl;
+}
+
+void boj_1546()
+{
+    // 백준 1546번 - 평균
+    int N, M = 0;
+    std::cin >> N;
+    
+    int grade[N];
+    int allGrade = 0;
+    
+    for (int i = 0; i < N; i++)
+    {
+        std::cin >> grade[i];
+        
+        if (M < grade[i])
+        {
+            M = grade[i];
+        }
+        
+        allGrade += grade[i];
+    }
+    
+    float result = (((float)allGrade / (float)M) * 100) / N;
+    std::cout << result << std::endl;
+}
