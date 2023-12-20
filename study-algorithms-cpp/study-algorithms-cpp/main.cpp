@@ -10,6 +10,7 @@
 #include "boj-solve-level/level_02.hpp"
 #include "boj-solve-level/level_03.hpp"
 #include "boj-solve-level/level_04.hpp"
+#include "boj-solve-level/level_05.hpp"
 
 void RunLevel01()
 {
@@ -66,15 +67,31 @@ void RunLevel04()
     //    boj_5597();     // 과제 안 내신 분..?
     //    boj_3052();     // 나머지
     //    boj_10811();      // 바구니 뒤집기
-    boj_1546();     // 평균
+    //    boj_1546();     // 평균
+}
+
+void RunLevel05()
+{
+    //    boj_27866();    // 문자와 문자열
+    //    boj_2743();     // 단어 길이 재기
+    //    boj_9086();     // 문자열
+    //    boj_11654();    // 아스키 코드
+    //    boj_11720();    // 숫자의 합
+    //    boj_10809();    // 알파벳 찾기
+    //    boj_2675();     // 문자열 반복
+    //    boj_1152();     // 단어의 개수
+    //    boj_2908();     // 상수
+    //    boj_5622();     // 다이얼
+    //    boj_11718();    // 그대로 출력하기
 }
 
 
 int main(int argc, const char * argv[]) {
-    //    RunLevel01();   // Level 01
-    //    RunLevel02();   // Level 02
-    //    RunLevel03();   // Level 03
-    RunLevel04();
+    //    RunLevel01();
+    //    RunLevel02();
+    //    RunLevel03();
+    //    RunLevel04();
+    RunLevel05();
     
     return 0;
 }

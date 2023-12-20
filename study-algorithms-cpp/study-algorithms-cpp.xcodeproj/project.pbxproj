@@ -10,6 +10,7 @@
 		1C6E55432B27116900795563 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E55422B27116900795563 /* main.cpp */; };
 		1C6E55512B2713B000795563 /* level_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E554F2B2713B000795563 /* level_01.cpp */; };
 		1C70C4962B2A26BE002AC23D /* level_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C4942B2A26BE002AC23D /* level_02.cpp */; };
+		1CD5256E2B3126EB0024AED9 /* level_05.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5256C2B3126EB0024AED9 /* level_05.cpp */; };
 		1CDA2B3D2B2AFD76000A4638 /* level_03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA2B3B2B2AFD76000A4638 /* level_03.cpp */; };
 		1CDA2B402B2C3595000A4638 /* level_04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA2B3E2B2C3595000A4638 /* level_04.cpp */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,8 @@
 		1C6E55502B2713B000795563 /* level_01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = level_01.hpp; sourceTree = "<group>"; };
 		1C70C4942B2A26BE002AC23D /* level_02.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = level_02.cpp; sourceTree = "<group>"; };
 		1C70C4952B2A26BE002AC23D /* level_02.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = level_02.hpp; sourceTree = "<group>"; };
+		1CD5256C2B3126EB0024AED9 /* level_05.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = level_05.cpp; sourceTree = "<group>"; };
+		1CD5256D2B3126EB0024AED9 /* level_05.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = level_05.hpp; sourceTree = "<group>"; };
 		1CDA2B3B2B2AFD76000A4638 /* level_03.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = level_03.cpp; sourceTree = "<group>"; };
 		1CDA2B3C2B2AFD76000A4638 /* level_03.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = level_03.hpp; sourceTree = "<group>"; };
 		1CDA2B3E2B2C3595000A4638 /* level_04.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = level_04.cpp; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				1CDA2B3C2B2AFD76000A4638 /* level_03.hpp */,
 				1CDA2B3E2B2C3595000A4638 /* level_04.cpp */,
 				1CDA2B3F2B2C3595000A4638 /* level_04.hpp */,
+				1CD5256C2B3126EB0024AED9 /* level_05.cpp */,
+				1CD5256D2B3126EB0024AED9 /* level_05.hpp */,
 			);
 			path = "boj-solve-level";
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				1CDA2B402B2C3595000A4638 /* level_04.cpp in Sources */,
 				1C70C4962B2A26BE002AC23D /* level_02.cpp in Sources */,
 				1CDA2B3D2B2AFD76000A4638 /* level_03.cpp in Sources */,
+				1CD5256E2B3126EB0024AED9 /* level_05.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +198,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -253,6 +260,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -277,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CAJY8SPHJ2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CAJY8SPHJ2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
